@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Power_Protection_edited)(type Legacy)(uri "C:/Users/kicaj/OneDrive/Dokumenty/GitHub repo/logic-analyzer-v1-hw/Library/Power_Protection_edited.lib")(options "")(descr ""))
+  (lib (name logic-analyzer-v1-rescue)(type Legacy)(uri ${KIPRJMOD}/logic-analyzer-v1-rescue.lib)(options "")(descr ""))
 )
