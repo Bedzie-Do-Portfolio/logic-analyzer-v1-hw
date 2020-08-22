@@ -166,29 +166,27 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5F3DC23A
-P 2250 2000
-F 0 "#PWR?" H 2250 1750 50  0001 C CNN
-F 1 "GND" H 2255 1827 50  0000 C CNN
-F 2 "" H 2250 2000 50  0001 C CNN
-F 3 "" H 2250 2000 50  0001 C CNN
-	1    2250 2000
+P 2250 1950
+F 0 "#PWR?" H 2250 1700 50  0001 C CNN
+F 1 "GND" H 2255 1777 50  0000 C CNN
+F 2 "" H 2250 1950 50  0001 C CNN
+F 3 "" H 2250 1950 50  0001 C CNN
+	1    2250 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 2000 2250 1900
+	2250 1950 2250 1900
 $Comp
 L power:GND #PWR?
 U 1 1 5F3DDEC8
-P 5600 5400
-F 0 "#PWR?" H 5600 5150 50  0001 C CNN
-F 1 "GND" H 5605 5227 50  0000 C CNN
-F 2 "" H 5600 5400 50  0001 C CNN
-F 3 "" H 5600 5400 50  0001 C CNN
-	1    5600 5400
+P 5400 5400
+F 0 "#PWR?" H 5400 5150 50  0001 C CNN
+F 1 "GND" H 5405 5227 50  0000 C CNN
+F 2 "" H 5400 5400 50  0001 C CNN
+F 3 "" H 5400 5400 50  0001 C CNN
+	1    5400 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 5400 5600 5300
 Text Notes 2550 2050 1    50   ~ 10
 Cap 1uF near VDDA pin
 Text Notes 2000 2300 1    50   ~ 10
@@ -317,9 +315,9 @@ Wire Wire Line
 Wire Wire Line
 	3100 4500 3100 4700
 Connection ~ 3100 4700
-Text Label 3900 4600 0    50   ~ 0
+Text Label 4500 4600 0    50   ~ 0
 I2C_SCL
-Text Label 3900 4700 0    50   ~ 0
+Text Label 4500 4700 0    50   ~ 0
 I2C_SDA
 Text HLabel 2650 4600 0    50   Output ~ 0
 I2C_SCL
@@ -328,14 +326,14 @@ I2C_SDA
 Wire Wire Line
 	2900 4150 2900 4200
 Text Notes 10250 3050 0    50   ~ 0
-konektor debuggowy
-Text Label 10250 2700 0    50   ~ 0
+debug connector
+Text Label 10100 2700 0    50   ~ 0
 GND
-Text Label 10250 2600 0    50   ~ 0
+Text Label 10100 2600 0    50   ~ 0
 SWCLK
-Text Label 10250 2800 0    50   ~ 0
+Text Label 10100 2800 0    50   ~ 0
 SWDIO
-Text Label 10250 2900 0    50   ~ 0
+Text Label 10100 2900 0    50   ~ 0
 NRST
 Wire Wire Line
 	4800 2900 4900 2900
@@ -376,28 +374,15 @@ F 3 "" H 3950 2950 50  0001 C CNN
 	1    3950 2950
 	1    0    0    -1  
 $EndComp
-Text Label 3750 2500 0    50   ~ 0
+Text Label 3700 2500 0    50   ~ 0
 NRST
 Wire Wire Line
-	3950 2500 3750 2500
+	3950 2500 3700 2500
 Connection ~ 3950 2500
 Text HLabel 800  1900 0    50   UnSpc ~ 10
 GND
 Wire Wire Line
 	3950 2500 4900 2500
-Wire Wire Line
-	4900 2700 4900 2600
-$Comp
-L Device:C C?
-U 1 1 5F508F55
-P 4200 2750
-F 0 "C?" V 4050 2700 50  0000 C CNN
-F 1 "100n" V 4100 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 2600 50  0001 C CNN
-F 3 "~" H 4200 2750 50  0001 C CNN
-	1    4200 2750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4200 2900 3950 2900
 Wire Wire Line
@@ -405,8 +390,6 @@ Wire Wire Line
 Wire Wire Line
 	3950 2800 3950 2900
 Connection ~ 3950 2900
-Wire Wire Line
-	4200 2600 4900 2600
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F51458E
@@ -434,12 +417,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F526039
-P 2150 1450
-F 0 "#PWR?" H 2150 1300 50  0001 C CNN
-F 1 "+3V3" H 2165 1623 50  0000 C CNN
-F 2 "" H 2150 1450 50  0001 C CNN
-F 3 "" H 2150 1450 50  0001 C CNN
-	1    2150 1450
+P 2250 1450
+F 0 "#PWR?" H 2250 1300 50  0001 C CNN
+F 1 "+3V3" H 2265 1623 50  0000 C CNN
+F 2 "" H 2250 1450 50  0001 C CNN
+F 3 "" H 2250 1450 50  0001 C CNN
+	1    2250 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -454,13 +437,13 @@ F 3 "" H 2900 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 2600 10250 2600
+	10500 2600 10100 2600
 Wire Wire Line
-	10500 2700 10250 2700
+	10500 2700 10100 2700
 Wire Wire Line
-	10500 2800 10250 2800
+	10500 2800 10100 2800
 Wire Wire Line
-	10500 2900 10250 2900
+	10500 2900 10100 2900
 Wire Wire Line
 	3100 4150 2900 4150
 Connection ~ 2900 4150
@@ -469,8 +452,7 @@ Connection ~ 1200 1350
 Wire Wire Line
 	1400 1350 1600 1350
 Wire Wire Line
-	2350 1450 2150 1450
-Connection ~ 2150 1450
+	2350 1450 2250 1450
 Wire Wire Line
 	2350 1500 2350 1450
 Wire Wire Line
@@ -545,16 +527,165 @@ Wire Wire Line
 	6200 4200 7700 4200
 Wire Wire Line
 	6200 4300 7700 4300
-Text Notes 4200 2300 0    50   ~ 0
-Co to za kondensator?\n
 Wire Wire Line
 	2900 4600 4900 4600
 Wire Wire Line
 	3100 4700 4900 4700
-Text Notes 2250 900  0    50   ~ 0
-Zdecyduj się na język xd
-Wire Notes Line
-	4600 2350 4150 2350
-Wire Notes Line
-	4150 2350 4150 2700
+$Comp
+L Device:R R?
+U 1 1 5F415484
+P 4500 2700
+AR Path="/5F08ED8D/5F415484" Ref="R?"  Part="1" 
+AR Path="/5F19654C/5F415484" Ref="R?"  Part="1" 
+F 0 "R?" V 4400 2800 50  0000 C CNN
+F 1 "4k7" V 4400 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4430 2700 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4200 2900 4200 2700
+Wire Wire Line
+	4200 2700 4350 2700
+Wire Wire Line
+	4650 2700 4900 2700
+Connection ~ 2250 1450
+Wire Wire Line
+	2250 1450 2150 1450
+Wire Wire Line
+	5400 5400 5400 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	6750 4700 6200 4700
+Wire Wire Line
+	6750 4800 6200 4800
+Text Label 6300 4700 0    50   ~ 0
+USB_DN
+Text Label 6300 4800 0    50   ~ 0
+USB_DP
+Wire Wire Line
+	6700 4500 6200 4500
+Wire Wire Line
+	6700 4600 6200 4600
+Text Label 6700 4500 2    50   ~ 0
+USART1_TX
+Text Label 6700 4600 2    50   ~ 0
+USART1_RX
+Wire Wire Line
+	6750 3800 6200 3800
+Wire Wire Line
+	6750 3900 6200 3900
+Text Label 6300 3800 0    50   ~ 0
+USART2_TX
+Text Label 6300 3900 0    50   ~ 0
+USART2_RX
+Entry Wire Line
+	4500 4300 4400 4200
+Entry Wire Line
+	4500 4200 4400 4100
+Entry Wire Line
+	4500 4100 4400 4000
+Entry Wire Line
+	4500 4000 4400 3900
+Entry Wire Line
+	4500 3900 4400 3800
+Entry Wire Line
+	4500 3800 4400 3700
+Entry Wire Line
+	4500 3700 4400 3600
+Entry Wire Line
+	4500 3600 4400 3500
+Text HLabel 4150 3400 0    50   Input ~ 0
+IN[0..7]
+Text Label 4800 3600 2    50   ~ 0
+IN0
+Text Label 4800 3700 2    50   ~ 0
+IN1
+Text Label 4800 3800 2    50   ~ 0
+IN2
+Text Label 4800 3900 2    50   ~ 0
+IN3
+Text Label 4800 4000 2    50   ~ 0
+IN4
+Text Label 4800 4100 2    50   ~ 0
+IN5
+Text Label 4800 4200 2    50   ~ 0
+IN6
+Text Label 4800 4300 2    50   ~ 0
+IN7
+Wire Wire Line
+	4500 4300 4900 4300
+Wire Wire Line
+	4500 4200 4900 4200
+Wire Wire Line
+	4500 4100 4900 4100
+Wire Wire Line
+	4500 4000 4900 4000
+Wire Wire Line
+	4500 3900 4900 3900
+Wire Wire Line
+	4500 3800 4900 3800
+Wire Wire Line
+	4500 3700 4900 3700
+Wire Wire Line
+	4500 3600 4900 3600
+NoConn ~ 4900 3200
+NoConn ~ 4900 3300
+NoConn ~ 4900 3400
+NoConn ~ 4900 4400
+NoConn ~ 4900 4500
+NoConn ~ 4900 4800
+NoConn ~ 4900 4900
+NoConn ~ 4900 5000
+NoConn ~ 4900 5100
+NoConn ~ 6200 3600
+NoConn ~ 6200 3700
+NoConn ~ 6200 4000
+NoConn ~ 6200 4400
+NoConn ~ 6200 5100
+Text HLabel 6750 4700 2    50   BiDi ~ 0
+USB_DN
+Text HLabel 6750 4800 2    50   BiDi ~ 0
+USB_DP
+Text HLabel 6750 3800 2    50   BiDi ~ 0
+USART2_TX
+Text HLabel 6750 3900 2    50   BiDi ~ 0
+USART2_RX
+Wire Bus Line
+	4150 3400 4400 3400
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5F5072CB
+P 10700 3500
+F 0 "J?" H 10800 3850 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 10800 3750 50  0000 C CNN
+F 2 "" H 10700 3500 50  0001 C CNN
+F 3 "~" H 10700 3500 50  0001 C CNN
+	1    10700 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3400 10100 3400
+Wire Wire Line
+	10500 3500 10100 3500
+Wire Wire Line
+	10500 3600 10100 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5F515523
+P 10100 3600
+F 0 "#PWR?" H 10100 3350 50  0001 C CNN
+F 1 "GND" H 10105 3427 50  0000 C CNN
+F 2 "" H 10100 3600 50  0001 C CNN
+F 3 "" H 10100 3600 50  0001 C CNN
+	1    10100 3600
+	1    0    0    -1  
+$EndComp
+Text Label 10100 3400 0    50   ~ 0
+USART1_TX
+Text Label 10100 3500 0    50   ~ 0
+USART1_RX
+Wire Bus Line
+	4400 3400 4400 4200
 $EndSCHEMATC

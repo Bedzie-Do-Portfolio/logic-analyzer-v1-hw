@@ -110,13 +110,13 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F09508A
-P 3650 5100
-F 0 "C?" H 3765 5146 50  0000 L CNN
-F 1 "4.7u" H 3765 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3688 4950 50  0001 C CNN
-F 3 "https://www.tme.eu/pl/details/c1206c475k3racauto/kondensatory-mlcc-smd-1206/kemet/" H 3650 5100 50  0001 C CNN
-F 4 "https://www.tme.eu/pl/details/c1206c475k3racauto/kondensatory-mlcc-smd-1206/kemet/" H 3650 5100 50  0001 C CNN "link"
-	1    3650 5100
+P 3600 5050
+F 0 "C?" H 3715 5096 50  0000 L CNN
+F 1 "4.7u" H 3715 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3638 4900 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/c1206c475k3racauto/kondensatory-mlcc-smd-1206/kemet/" H 3600 5050 50  0001 C CNN
+F 4 "https://www.tme.eu/pl/details/c1206c475k3racauto/kondensatory-mlcc-smd-1206/kemet/" H 3600 5050 50  0001 C CNN "link"
+	1    3600 5050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -191,37 +191,37 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F0950BF
-P 3250 5100
-F 0 "C?" H 3365 5146 50  0000 L CNN
-F 1 "100n" H 3365 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3288 4950 50  0001 C CNN
-F 3 "~" H 3250 5100 50  0001 C CNN
-	1    3250 5100
+P 3200 5050
+F 0 "C?" H 3315 5096 50  0000 L CNN
+F 1 "100n" H 3315 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3238 4900 50  0001 C CNN
+F 3 "~" H 3200 5050 50  0001 C CNN
+	1    3200 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F0950C5
-P 3450 5450
-F 0 "#PWR?" H 3450 5200 50  0001 C CNN
-F 1 "GND" H 3455 5277 50  0000 C CNN
-F 2 "" H 3450 5450 50  0001 C CNN
-F 3 "" H 3450 5450 50  0001 C CNN
-	1    3450 5450
+P 3400 5400
+F 0 "#PWR?" H 3400 5150 50  0001 C CNN
+F 1 "GND" H 3405 5227 50  0000 C CNN
+F 2 "" H 3400 5400 50  0001 C CNN
+F 3 "" H 3400 5400 50  0001 C CNN
+	1    3400 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 4950 3450 4950
+	3200 4900 3400 4900
 Wire Wire Line
-	3650 4950 3450 4950
-Connection ~ 3450 4950
+	3600 4900 3400 4900
+Connection ~ 3400 4900
 Wire Wire Line
-	3250 5250 3450 5250
+	3200 5200 3400 5200
 Wire Wire Line
-	3450 5250 3450 5450
+	3400 5200 3400 5400
 Wire Wire Line
-	3450 5250 3650 5250
-Connection ~ 3450 5250
+	3400 5200 3600 5200
+Connection ~ 3400 5200
 $Comp
 L Device:C C?
 U 1 1 5F0950D9
@@ -433,7 +433,7 @@ Connection ~ 7200 3350
 Text HLabel 6750 4500 2    50   BiDi ~ 0
 USB_DP
 Text HLabel 6750 4300 2    50   BiDi ~ 0
-USB_DM
+USB_DN
 Wire Wire Line
 	6400 4500 6750 4500
 Wire Wire Line
@@ -481,7 +481,7 @@ Wire Wire Line
 	7950 2650 7950 2750
 Connection ~ 7950 2750
 Wire Wire Line
-	3450 4700 3450 4950
+	3400 4650 3400 4900
 $Comp
 L power:VCC #PWR?
 U 1 1 5F52B97E
@@ -528,14 +528,14 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5F4189D9
-P 3450 4700
+P 3400 4650
 AR Path="/5F19654C/5F4189D9" Ref="#PWR?"  Part="1" 
 AR Path="/5F08ED8D/5F4189D9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3450 4550 50  0001 C CNN
-F 1 "VCC" H 3465 4873 50  0000 C CNN
-F 2 "" H 3450 4700 50  0001 C CNN
-F 3 "" H 3450 4700 50  0001 C CNN
-	1    3450 4700
+F 0 "#PWR?" H 3400 4500 50  0001 C CNN
+F 1 "VCC" H 3415 4823 50  0000 C CNN
+F 2 "" H 3400 4650 50  0001 C CNN
+F 3 "" H 3400 4650 50  0001 C CNN
+	1    3400 4650
 	1    0    0    -1  
 $EndComp
 Connection ~ 5900 3550
