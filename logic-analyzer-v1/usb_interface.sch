@@ -14,28 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R?
-U 1 1 5F09503A
-P 6250 3550
-F 0 "R?" V 6150 3500 50  0000 C CNN
-F 1 "27R" V 6150 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3550 50  0001 C CNN
-F 3 "~" H 6250 3550 50  0001 C CNN
-	1    6250 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F095040
-P 6250 3750
-F 0 "R?" V 6150 3700 50  0000 C CNN
-F 1 "27R" V 6150 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3750 50  0001 C CNN
-F 3 "~" H 6250 3750 50  0001 C CNN
-	1    6250 3750
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5F095046
 P 5500 4200
@@ -419,30 +397,6 @@ F 3 "" H 2800 4050 50  0001 C CNN
 	1    2800 4050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0E9124
-P 6250 4300
-F 0 "R?" V 6150 4250 50  0000 C CNN
-F 1 "27R" V 6150 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 4300 50  0001 C CNN
-F 3 "~" H 6250 4300 50  0001 C CNN
-	1    6250 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0E9480
-P 6250 4500
-F 0 "R?" V 6150 4450 50  0000 C CNN
-F 1 "27R" V 6150 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 4500 50  0001 C CNN
-F 3 "~" H 6250 4500 50  0001 C CNN
-	1    6250 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5900 3550 5100 3550
 Wire Wire Line
 	5850 4500 6100 4500
 Wire Wire Line
@@ -452,14 +406,7 @@ Wire Wire Line
 Text Notes 7050 5000 2    50   ~ 10
 R3 & R4 - USB for FTDI\nR6 & R7 - USB for MCU
 Wire Wire Line
-	5900 3550 6100 3550
-Wire Wire Line
-	5900 3550 5900 4300
-Wire Wire Line
-	6400 3550 7350 3550
-Wire Wire Line
 	7350 3550 7350 3650
-Connection ~ 5900 3550
 Wire Wire Line
 	5850 3750 5850 4500
 Wire Wire Line
@@ -491,12 +438,6 @@ Wire Wire Line
 	6400 4500 6750 4500
 Wire Wire Line
 	6400 4300 6750 4300
-Wire Notes Line
-	6000 3350 6550 3350
-Wire Notes Line
-	6550 3350 6550 4750
-Wire Notes Line
-	6550 4750 7150 4750
 Wire Notes Line
 	7150 4750 7150 5100
 Wire Notes Line
@@ -541,79 +482,119 @@ Wire Wire Line
 Connection ~ 7950 2750
 Wire Wire Line
 	3450 4700 3450 4950
-Text HLabel 9900 4350 2    50   UnSpc ~ 10
-+3V3
-Wire Wire Line
-	9900 4350 9750 4350
-Wire Wire Line
-	9750 4350 9750 4300
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5F52835A
-P 9750 4300
-AR Path="/5F19654C/5F52835A" Ref="#PWR?"  Part="1" 
-AR Path="/5F08ED8D/5F52835A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9750 4150 50  0001 C CNN
-F 1 "+3V3" H 9765 4473 50  0000 C CNN
-F 2 "" H 9750 4300 50  0001 C CNN
-F 3 "" H 9750 4300 50  0001 C CNN
-	1    9750 4300
+L power:VCC #PWR?
+U 1 1 5F52B97E
+P 3600 2650
+AR Path="/5F19654C/5F52B97E" Ref="#PWR?"  Part="1" 
+AR Path="/5F08ED8D/5F52B97E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3600 2500 50  0001 C CNN
+F 1 "VCC" H 3615 2823 50  0000 C CNN
+F 2 "" H 3600 2650 50  0001 C CNN
+F 3 "" H 3600 2650 50  0001 C CNN
+	1    3600 2650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3600 2650 3600 2950
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5F52ACF7
+L power:VCC #PWR?
+U 1 1 5F414476
+P 4950 2650
+AR Path="/5F19654C/5F414476" Ref="#PWR?"  Part="1" 
+AR Path="/5F08ED8D/5F414476" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4950 2500 50  0001 C CNN
+F 1 "VCC" H 4965 2823 50  0000 C CNN
+F 2 "" H 4950 2650 50  0001 C CNN
+F 3 "" H 4950 2650 50  0001 C CNN
+	1    4950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2650 4950 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 5F415F7E
 P 7950 2650
-AR Path="/5F19654C/5F52ACF7" Ref="#PWR?"  Part="1" 
-AR Path="/5F08ED8D/5F52ACF7" Ref="#PWR?"  Part="1" 
+AR Path="/5F19654C/5F415F7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F08ED8D/5F415F7E" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7950 2500 50  0001 C CNN
-F 1 "+3V3" H 7965 2823 50  0000 C CNN
+F 1 "VCC" H 7965 2823 50  0000 C CNN
 F 2 "" H 7950 2650 50  0001 C CNN
 F 3 "" H 7950 2650 50  0001 C CNN
 	1    7950 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5F52B33B
-P 4950 2650
-AR Path="/5F19654C/5F52B33B" Ref="#PWR?"  Part="1" 
-AR Path="/5F08ED8D/5F52B33B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4950 2500 50  0001 C CNN
-F 1 "+3V3" H 4965 2823 50  0000 C CNN
-F 2 "" H 4950 2650 50  0001 C CNN
-F 3 "" H 4950 2650 50  0001 C CNN
-	1    4950 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F52B97E
-P 3600 2650
-AR Path="/5F19654C/5F52B97E" Ref="#PWR?"  Part="1" 
-AR Path="/5F08ED8D/5F52B97E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3600 2500 50  0001 C CNN
-F 1 "+3V3" H 3615 2823 50  0000 C CNN
-F 2 "" H 3600 2650 50  0001 C CNN
-F 3 "" H 3600 2650 50  0001 C CNN
-	1    3600 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F52BDA1
+L power:VCC #PWR?
+U 1 1 5F4189D9
 P 3450 4700
-AR Path="/5F19654C/5F52BDA1" Ref="#PWR?"  Part="1" 
-AR Path="/5F08ED8D/5F52BDA1" Ref="#PWR?"  Part="1" 
+AR Path="/5F19654C/5F4189D9" Ref="#PWR?"  Part="1" 
+AR Path="/5F08ED8D/5F4189D9" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3450 4550 50  0001 C CNN
-F 1 "+3V3" H 3465 4873 50  0000 C CNN
+F 1 "VCC" H 3465 4873 50  0000 C CNN
 F 2 "" H 3450 4700 50  0001 C CNN
 F 3 "" H 3450 4700 50  0001 C CNN
 	1    3450 4700
 	1    0    0    -1  
 $EndComp
+Connection ~ 5900 3550
 Wire Wire Line
-	4950 2650 4950 3350
+	5900 3550 5900 4300
 Wire Wire Line
-	3600 2650 3600 2950
+	5900 3550 5100 3550
+Wire Wire Line
+	5900 3550 6100 3550
+Wire Wire Line
+	6400 3550 7350 3550
+$Comp
+L Device:R R?
+U 1 1 5F0E9480
+P 6250 4500
+F 0 "R?" V 6150 4450 50  0000 C CNN
+F 1 "27R" V 6150 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 4500 50  0001 C CNN
+F 3 "~" H 6250 4500 50  0001 C CNN
+	1    6250 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0E9124
+P 6250 4300
+F 0 "R?" V 6150 4250 50  0000 C CNN
+F 1 "27R" V 6150 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 4300 50  0001 C CNN
+F 3 "~" H 6250 4300 50  0001 C CNN
+	1    6250 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F095040
+P 6250 3750
+F 0 "R?" V 6150 3700 50  0000 C CNN
+F 1 "27R" V 6150 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3750 50  0001 C CNN
+F 3 "~" H 6250 3750 50  0001 C CNN
+	1    6250 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F09503A
+P 6250 3550
+F 0 "R?" V 6150 3500 50  0000 C CNN
+F 1 "27R" V 6150 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3550 50  0001 C CNN
+F 3 "~" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6000 3350 6550 3350
+Wire Notes Line
+	6550 4750 7150 4750
+Wire Notes Line
+	6550 3350 6550 4750
 $EndSCHEMATC
