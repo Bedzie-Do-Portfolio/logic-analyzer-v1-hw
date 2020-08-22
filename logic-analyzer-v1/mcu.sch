@@ -50,15 +50,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5F1AF296
-P 10700 2700
-F 0 "J?" H 10800 3050 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 10800 2950 50  0000 C CNN
-F 2 "" H 10700 2700 50  0001 C CNN
-F 3 "~" H 10700 2700 50  0001 C CNN
-	1    10700 2700
+P 10700 2900
+F 0 "J?" H 10800 3250 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 10800 3150 50  0000 C CNN
+F 2 "" H 10700 2900 50  0001 C CNN
+F 3 "~" H 10700 2900 50  0001 C CNN
+	1    10700 2900
 	-1   0    0    -1  
 $EndComp
-Connection ~ 5600 2300
 $Comp
 L Device:C C?
 U 1 1 5F3939CB
@@ -155,9 +154,6 @@ $EndComp
 Wire Wire Line
 	1200 1350 1200 1500
 Wire Wire Line
-	5700 5300 5600 5300
-Connection ~ 5600 5300
-Wire Wire Line
 	2150 1900 2150 1800
 Wire Wire Line
 	1200 1800 1200 1900
@@ -206,34 +202,6 @@ Wire Wire Line
 	1600 1900 1800 1900
 Wire Wire Line
 	1600 1350 1800 1350
-Connection ~ 5700 2300
-Connection ~ 5500 2300
-Wire Wire Line
-	5400 2300 5500 2300
-Wire Wire Line
-	5500 2300 5600 2300
-Connection ~ 5500 5300
-Wire Wire Line
-	5500 5300 5600 5300
-Wire Wire Line
-	5400 5300 5500 5300
-Wire Wire Line
-	5800 2300 5700 2300
-Wire Wire Line
-	5600 2300 5700 2300
-$Comp
-L MCU_ST_STM32F1:STM32F102C8Tx U?
-U 1 1 5F196629
-P 5600 3800
-F 0 "U?" H 5500 4450 50  0000 C CNN
-F 1 "STM32F102C8Tx" H 5750 4300 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5000 2400 50  0001 R CNN
-F 3 "https://www.st.com/resource/en/datasheet/stm32f102c8.pdf" H 5600 3800 50  0001 C CNN
-F 4 "https://www.st.com/resource/en/application_note/cd00221665-oscillator-design-guide-for-stm8af-al-s-stm32-mcus-and-mpus-stmicroelectronics.pdf" H 5600 3800 50  0001 C CNN "Oscillator design"
-F 5 "https://www.st.com/resource/en/application_note/cd00164185-getting-started-with-stm32f10xxx-hardware-development-stmicroelectronics.pdf" H 5600 3800 50  0001 C CNN "Application note"
-	1    5600 3800
-	1    0    0    -1  
-$EndComp
 Text Label 4800 2900 2    50   ~ 0
 OSC_IN
 Text Label 4800 3000 2    50   ~ 0
@@ -325,15 +293,13 @@ Text HLabel 2650 4700 0    50   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
 	2900 4150 2900 4200
-Text Notes 10250 3050 0    50   ~ 0
-debug connector
-Text Label 10100 2700 0    50   ~ 0
-GND
-Text Label 10100 2600 0    50   ~ 0
-SWCLK
-Text Label 10100 2800 0    50   ~ 0
-SWDIO
 Text Label 10100 2900 0    50   ~ 0
+GND
+Text Label 10100 2800 0    50   ~ 0
+SWCLK
+Text Label 10100 3000 0    50   ~ 0
+SWDIO
+Text Label 10100 3100 0    50   ~ 0
 NRST
 Wire Wire Line
 	4800 2900 4900 2900
@@ -437,17 +403,16 @@ F 3 "" H 2900 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 2600 10100 2600
-Wire Wire Line
-	10500 2700 10100 2700
-Wire Wire Line
 	10500 2800 10100 2800
 Wire Wire Line
 	10500 2900 10100 2900
 Wire Wire Line
+	10500 3000 10100 3000
+Wire Wire Line
+	10500 3100 10100 3100
+Wire Wire Line
 	3100 4150 2900 4150
 Connection ~ 2900 4150
-Connection ~ 5400 2300
 Connection ~ 1200 1350
 Wire Wire Line
 	1400 1350 1600 1350
@@ -531,31 +496,13 @@ Wire Wire Line
 	2900 4600 4900 4600
 Wire Wire Line
 	3100 4700 4900 4700
-$Comp
-L Device:R R?
-U 1 1 5F415484
-P 4500 2700
-AR Path="/5F08ED8D/5F415484" Ref="R?"  Part="1" 
-AR Path="/5F19654C/5F415484" Ref="R?"  Part="1" 
-F 0 "R?" V 4400 2800 50  0000 C CNN
-F 1 "4k7" V 4400 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4430 2700 50  0001 C CNN
-F 3 "~" H 4500 2700 50  0001 C CNN
-	1    4500 2700
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	4200 2900 4200 2700
-Wire Wire Line
-	4200 2700 4350 2700
-Wire Wire Line
-	4650 2700 4900 2700
 Connection ~ 2250 1450
 Wire Wire Line
 	2250 1450 2150 1450
 Wire Wire Line
 	5400 5400 5400 5300
-Connection ~ 5400 5300
 Wire Wire Line
 	6750 4700 6200 4700
 Wire Wire Line
@@ -630,7 +577,6 @@ Wire Wire Line
 	4500 3700 4900 3700
 Wire Wire Line
 	4500 3600 4900 3600
-NoConn ~ 4900 3200
 NoConn ~ 4900 3300
 NoConn ~ 4900 3400
 NoConn ~ 4900 4400
@@ -639,8 +585,6 @@ NoConn ~ 4900 4800
 NoConn ~ 4900 4900
 NoConn ~ 4900 5000
 NoConn ~ 4900 5100
-NoConn ~ 6200 3600
-NoConn ~ 6200 3700
 NoConn ~ 6200 4000
 NoConn ~ 6200 4400
 NoConn ~ 6200 5100
@@ -657,35 +601,199 @@ Wire Bus Line
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 5F5072CB
-P 10700 3500
-F 0 "J?" H 10800 3850 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 10800 3750 50  0000 C CNN
-F 2 "" H 10700 3500 50  0001 C CNN
-F 3 "~" H 10700 3500 50  0001 C CNN
-	1    10700 3500
+P 10700 3700
+F 0 "J?" H 10800 4050 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 10800 3950 50  0000 C CNN
+F 2 "" H 10700 3700 50  0001 C CNN
+F 3 "~" H 10700 3700 50  0001 C CNN
+	1    10700 3700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 3400 10100 3400
-Wire Wire Line
-	10500 3500 10100 3500
-Wire Wire Line
 	10500 3600 10100 3600
+Wire Wire Line
+	10500 3700 10100 3700
+Wire Wire Line
+	10500 3800 10100 3800
 $Comp
 L power:GND #PWR?
 U 1 1 5F515523
-P 10100 3600
-F 0 "#PWR?" H 10100 3350 50  0001 C CNN
-F 1 "GND" H 10105 3427 50  0000 C CNN
-F 2 "" H 10100 3600 50  0001 C CNN
-F 3 "" H 10100 3600 50  0001 C CNN
-	1    10100 3600
+P 10100 3800
+F 0 "#PWR?" H 10100 3550 50  0001 C CNN
+F 1 "GND" H 10105 3627 50  0000 C CNN
+F 2 "" H 10100 3800 50  0001 C CNN
+F 3 "" H 10100 3800 50  0001 C CNN
+	1    10100 3800
 	1    0    0    -1  
 $EndComp
-Text Label 10100 3400 0    50   ~ 0
+Text Label 10100 3600 0    50   ~ 0
 USART1_TX
-Text Label 10100 3500 0    50   ~ 0
+Text Label 10100 3700 0    50   ~ 0
 USART1_RX
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F41AB6E
+P 10700 4400
+F 0 "J?" H 10800 4750 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 10800 4650 50  0000 C CNN
+F 2 "" H 10700 4400 50  0001 C CNN
+F 3 "~" H 10700 4400 50  0001 C CNN
+	1    10700 4400
+	-1   0    0    -1  
+$EndComp
+Text Notes 10100 3250 0    50   ~ 0
+debug connector
+$Comp
+L Device:R R?
+U 1 1 5F41D440
+P 10200 4350
+AR Path="/5F08ED8D/5F41D440" Ref="R?"  Part="1" 
+AR Path="/5F19654C/5F41D440" Ref="R?"  Part="1" 
+F 0 "R?" V 10100 4450 50  0000 C CNN
+F 1 "100R" V 10100 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 4350 50  0001 C CNN
+F 3 "~" H 10200 4350 50  0001 C CNN
+	1    10200 4350
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F41E950
+P 9850 4350
+F 0 "#PWR?" H 9850 4200 50  0001 C CNN
+F 1 "+3V3" H 9865 4523 50  0000 C CNN
+F 2 "" H 9850 4350 50  0001 C CNN
+F 3 "" H 9850 4350 50  0001 C CNN
+	1    9850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2700 4750 2700
+Wire Wire Line
+	4200 2700 4350 2700
+$Comp
+L Device:R R?
+U 1 1 5F415484
+P 4500 2700
+AR Path="/5F08ED8D/5F415484" Ref="R?"  Part="1" 
+AR Path="/5F19654C/5F415484" Ref="R?"  Part="1" 
+F 0 "R?" V 4400 2800 50  0000 C CNN
+F 1 "4k7" V 4400 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4430 2700 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4750 2700 4750 2250
+Wire Wire Line
+	4750 2250 3700 2250
+Connection ~ 4750 2700
+Wire Wire Line
+	4750 2700 4900 2700
+Text Label 3700 2250 0    50   ~ 0
+BOOT0
+Text Label 10100 4500 0    50   ~ 0
+BOOT0
+Wire Wire Line
+	10100 4500 10500 4500
+Wire Wire Line
+	9850 4350 10050 4350
+Wire Wire Line
+	10350 4350 10350 4400
+Wire Wire Line
+	10350 4400 10500 4400
+Wire Wire Line
+	5700 5300 5600 5300
+Connection ~ 5600 5300
+Wire Wire Line
+	5400 5300 5500 5300
+Wire Wire Line
+	5500 5300 5600 5300
+Connection ~ 5500 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	5800 2300 5700 2300
+Connection ~ 5700 2300
+Wire Wire Line
+	5600 2300 5700 2300
+Connection ~ 5600 2300
+Wire Wire Line
+	5500 2300 5600 2300
+Wire Wire Line
+	5400 2300 5500 2300
+Connection ~ 5500 2300
+Connection ~ 5400 2300
+$Comp
+L MCU_ST_STM32F1:STM32F102C8Tx U?
+U 1 1 5F196629
+P 5600 3800
+F 0 "U?" H 5500 4450 50  0000 C CNN
+F 1 "STM32F102C8Tx" H 5750 4300 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5000 2400 50  0001 R CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f102c8.pdf" H 5600 3800 50  0001 C CNN
+F 4 "https://www.st.com/resource/en/application_note/cd00221665-oscillator-design-guide-for-stm8af-al-s-stm32-mcus-and-mpus-stmicroelectronics.pdf" H 5600 3800 50  0001 C CNN "Oscillator design"
+F 5 "https://www.st.com/resource/en/application_note/cd00164185-getting-started-with-stm32f10xxx-hardware-development-stmicroelectronics.pdf" H 5600 3800 50  0001 C CNN "Application note"
+	1    5600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3200 3700 3200
+Text Label 4400 3200 0    50   ~ 0
+debug_led
+$Comp
+L Device:LED D?
+U 1 1 5F4446F1
+P 3150 3200
+F 0 "D?" H 3143 3417 50  0000 C CNN
+F 1 "LED" H 3143 3326 50  0000 C CNN
+F 2 "" H 3150 3200 50  0001 C CNN
+F 3 "~" H 3150 3200 50  0001 C CNN
+	1    3150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3200 3300 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5F45EC84
+P 2900 3300
+F 0 "#PWR?" H 2900 3050 50  0001 C CNN
+F 1 "GND" H 2905 3127 50  0000 C CNN
+F 2 "" H 2900 3300 50  0001 C CNN
+F 3 "" H 2900 3300 50  0001 C CNN
+	1    2900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3300 2900 3200
+Wire Wire Line
+	2900 3200 3000 3200
+$Comp
+L Device:R R?
+U 1 1 5F4452A2
+P 3550 3200
+AR Path="/5F08ED8D/5F4452A2" Ref="R?"  Part="1" 
+AR Path="/5F19654C/5F4452A2" Ref="R?"  Part="1" 
+F 0 "R?" V 3650 3050 50  0000 C CNN
+F 1 "1k" V 3650 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3480 3200 50  0001 C CNN
+F 3 "~" H 3550 3200 50  0001 C CNN
+	1    3550 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3700 6750 3700
+Wire Wire Line
+	6200 3600 6750 3600
 Wire Bus Line
 	4400 3400 4400 4200
+Text Label 6300 3600 0    50   ~ 0
+SPI_CS_0
+Text Label 6300 3700 0    50   ~ 0
+SPI_CS_1
+Text HLabel 6750 3600 2    50   BiDi ~ 0
+SPI_CS_0
+Text HLabel 6750 3700 2    50   BiDi ~ 0
+SPI_CS_1
 $EndSCHEMATC
