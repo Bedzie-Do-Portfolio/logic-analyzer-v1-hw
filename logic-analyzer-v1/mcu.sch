@@ -797,7 +797,7 @@ L Memory_RAM:ESP-PSRAM32 U?
 U 1 1 5F44BD22
 P 1450 5450
 F 0 "U?" H 1300 5450 50  0000 R CNN
-F 1 "ESP-PSRAM32" H 1200 6000 50  0000 R CNN
+F 1 "ESP-PSRAM32" H 1250 6000 50  0000 R CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1450 4850 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp-psram32_datasheet_en.pdf" H 1050 5950 50  0001 C CNN
 	1    1450 5450
@@ -913,7 +913,7 @@ L Memory_RAM:ESP-PSRAM32 U?
 U 1 1 5F55C8F8
 P 1450 6900
 F 0 "U?" H 1300 6900 50  0000 R CNN
-F 1 "ESP-PSRAM32" H 1200 7450 50  0000 R CNN
+F 1 "ESP-PSRAM32" H 1250 7450 50  0000 R CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1450 6300 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp-psram32_datasheet_en.pdf" H 1050 7400 50  0001 C CNN
 	1    1450 6900
