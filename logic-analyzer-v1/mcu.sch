@@ -1024,4 +1024,6 @@ F 3 "~" H 2450 6900 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	4900 3400 4900 4200
+Text Notes 1500 6150 0    50   ~ 10
+dla estetyki skopiować libke i edytować zgodnie z DS
 $EndSCHEMATC
