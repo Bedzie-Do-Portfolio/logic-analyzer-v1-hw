@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1750 3450 0    50   UnSpc ~ 0
+GND
+Text HLabel 1750 3450 0    50   UnSpc ~ 0
+GND
+$Sheet
+S 2550 1700 1250 1250
+U 5FDA8D6E
+F0 "digi_pot" 50
+F1 "digi_pot.sch" 50
+F2 "VREF_OUT" O R 3800 2350 50 
+F3 "3V3" U L 2550 1950 50 
+F4 "GND" U L 2550 2750 50 
+F5 "I2C_SCL" I L 2550 2350 50 
+F6 "I2C_SDA" B L 2550 2450 50 
+$EndSheet
+$Comp
+L power:GND #PWR?
+U 1 1 5FDA9780
+P 2350 3000
+F 0 "#PWR?" H 2350 2750 50  0001 C CNN
+F 1 "GND" H 2355 2827 50  0000 C CNN
+F 2 "" H 2350 3000 50  0001 C CNN
+F 3 "" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2750 2350 2750
+Wire Wire Line
+	2350 2750 2350 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5FDAB2A6
+P 1800 3550
+F 0 "#PWR?" H 1800 3300 50  0001 C CNN
+F 1 "GND" H 1805 3377 50  0000 C CNN
+F 2 "" H 1800 3550 50  0001 C CNN
+F 3 "" H 1800 3550 50  0001 C CNN
+	1    1800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3450 1800 3450
+Wire Wire Line
+	1800 3450 1800 3550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FDABC64
+P 2300 1750
+F 0 "#PWR?" H 2300 1600 50  0001 C CNN
+F 1 "+3.3V" H 2315 1923 50  0000 C CNN
+F 2 "" H 2300 1750 50  0001 C CNN
+F 3 "" H 2300 1750 50  0001 C CNN
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1950 2300 1950
+Wire Wire Line
+	2300 1950 2300 1750
+Text HLabel 1650 2350 0    50   Input ~ 0
+I2C_SCL
+Text HLabel 1650 2450 0    50   BiDi ~ 0
+I2C_SDA
+Wire Wire Line
+	1650 2450 2550 2450
+Wire Wire Line
+	1650 2350 2550 2350
+$EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -430,14 +430,14 @@ Wire Wire Line
 	7200 3000 7200 3350
 Connection ~ 8150 3000
 Connection ~ 7200 3350
-Text HLabel 6750 4500 2    50   BiDi ~ 0
+Text HLabel 6650 4500 2    50   BiDi ~ 0
 USB_DP
-Text HLabel 6750 4300 2    50   BiDi ~ 0
+Text HLabel 6650 4300 2    50   BiDi ~ 0
 USB_DN
 Wire Wire Line
-	6400 4500 6750 4500
+	6400 4500 6650 4500
 Wire Wire Line
-	6400 4300 6750 4300
+	6400 4300 6650 4300
 Wire Notes Line
 	7150 4750 7150 5100
 Wire Notes Line
