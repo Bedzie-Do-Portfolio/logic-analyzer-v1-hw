@@ -56,7 +56,7 @@ F 3 "~" H 7400 3050 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Potentiometer_Digital:MCP4551 U?
+L logic-analyzer-v1-rescue:MCP4551-Potentiometer_Digital U?
 U 1 1 5FDA8C94
 P 5150 3300
 F 0 "U?" H 5150 3465 50  0000 C CNN

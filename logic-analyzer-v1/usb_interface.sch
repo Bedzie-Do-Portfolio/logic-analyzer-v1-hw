@@ -97,7 +97,7 @@ F 3 "" H 5100 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J?
+L logic-analyzer-v1-rescue:USB_B_Micro-Connector J?
 U 1 1 5F095083
 P 2700 3150
 F 0 "J?" H 2757 3617 50  0000 C CNN
