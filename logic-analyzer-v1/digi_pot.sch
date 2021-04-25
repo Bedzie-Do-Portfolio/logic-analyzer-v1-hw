@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7550 3600 2    50   Output ~ 0
+Text HLabel 6350 3600 2    50   Output ~ 0
 VREF_OUT
 Text HLabel 2250 3500 0    50   UnSpc ~ 0
 3V3
@@ -27,17 +27,6 @@ Text HLabel 4500 3600 0    50   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
 	4500 3500 4750 3500
-$Comp
-L logic-analyzer-v1-rescue:MCP4551-Potentiometer_Digital U?
-U 1 1 5FDA8C94
-P 5150 3300
-F 0 "U?" H 5150 3465 50  0000 C CNN
-F 1 "MCP4551" H 5150 3374 50  0000 C CNN
-F 2 "" H 5200 3300 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/22096b.pdf" H 5200 3300 50  0001 C CNN
-	1    5150 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FDA93EF
@@ -166,5 +155,16 @@ Wire Wire Line
 	4650 3400 4750 3400
 Connection ~ 4650 3700
 Wire Wire Line
-	5550 3600 7550 3600
+	5550 3600 6350 3600
+$Comp
+L my_library:MCP4551 U??
+U 1 1 60879532
+P 5150 3550
+F 0 "U??" H 5150 3965 50  0000 C CNN
+F 1 "MCP4551" H 5150 3874 50  0000 C CNN
+F 2 "" H 5200 3800 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/22096b.pdf" H 5200 3800 50  0001 C CNN
+	1    5150 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

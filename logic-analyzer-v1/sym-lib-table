@@ -1,4 +1,8 @@
 (sym_lib_table
   (lib (name Power_Protection_edited)(type Legacy)(uri "C:/Users/kicaj/OneDrive/Dokumenty/GitHub repo/logic-analyzer-v1-hw/Library/Power_Protection_edited.lib")(options "")(descr ""))
   (lib (name logic-analyzer-v1-rescue)(type Legacy)(uri ${KIPRJMOD}/logic-analyzer-v1-rescue.lib)(options "")(descr ""))
+  (lib (name pwr_protect)(type Legacy)(uri "C:/Users/Kicajski/OneDrive/Dokumenty/GitHub repo/logic-analyzer-v1-hw/Library/pwr_protect.lib")(options "")(descr ""))
+  (lib (name usblc6-2sc6)(type Legacy)(uri "C:/Users/Kicajski/OneDrive/Dokumenty/GitHub repo/logic-analyzer-v1-hw/Library/usblc6-2sc6.lib")(options "")(descr ""))
+  (lib (name my_library)(type Legacy)(uri "C:/Users/Kicajski/OneDrive/Dokumenty/GitHub repo/logic-analyzer-v1-hw/Library/my_library.lib")(options "")(descr ""))
+  (lib (name sram_23a1024)(type Legacy)(uri "C:/Users/Kicajski/OneDrive/Dokumenty/GitHub repo/logic-analyzer-v1-hw/Library/sram_23a1024.lib")(options "")(descr ""))
 )

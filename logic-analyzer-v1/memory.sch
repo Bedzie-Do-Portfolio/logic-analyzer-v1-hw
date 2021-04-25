@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -270,17 +270,6 @@ Wire Wire Line
 	8350 2700 8350 2500
 $Comp
 L logic-analyzer-v1-rescue:sram_23A1024-New_Library U?
-U 1 1 6063BECA
-P 1750 2900
-F 0 "U?" H 2300 3750 50  0000 C CNN
-F 1 "sram_23A1024" H 2300 3650 50  0000 C CNN
-F 2 "" H 2300 3600 50  0001 C CNN
-F 3 "https://www.tme.eu/pl/details/23lc1024-i_sn/pamieci-sram-szeregowe/microchip-technology/" H 2300 3600 50  0001 C CNN
-	1    1750 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L logic-analyzer-v1-rescue:sram_23A1024-New_Library U?
 U 1 1 6064CBA0
 P 1750 4850
 F 0 "U?" H 2300 5700 50  0000 C CNN
@@ -378,4 +367,26 @@ Wire Wire Line
 Connection ~ 1750 5050
 Wire Wire Line
 	1750 5050 1750 5150
+$Comp
+L my_library:sram_23A1024 U??
+U 1 1 60877B38
+P 2300 1650
+F 0 "U??" H 2325 2065 50  0000 C CNN
+F 1 "sram_23A1024" H 2325 1974 50  0000 C CNN
+F 2 "" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L my_library:sram_23A1024 U?
+U 1 1 60878112
+P 2300 2400
+F 0 "U?" H 2325 2815 50  0000 C CNN
+F 1 "sram_23A1024" H 2325 2724 50  0000 C CNN
+F 2 "" H 2300 2750 50  0001 C CNN
+F 3 "" H 2300 2750 50  0001 C CNN
+	1    2300 2400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

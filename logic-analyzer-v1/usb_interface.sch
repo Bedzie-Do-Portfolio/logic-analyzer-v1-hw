@@ -305,19 +305,6 @@ F 3 "~" H 3300 2950 50  0001 C CNN
 	1    3300 2950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L logic-analyzer-v1-rescue:USBLC6-2SC6_new-Power_Protection_edited U?
-U 1 1 5F09511D
-P 4450 3350
-AR Path="/5F09511D" Ref="U?"  Part="1" 
-AR Path="/5F08ED8D/5F09511D" Ref="U1"  Part="1" 
-F 0 "U1" V 3983 3350 50  0000 C CNN
-F 1 "USBLC6-2SC6_new" V 4100 3350 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5300 3700 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4650 3700 50  0001 C CNN
-	1    4450 3350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3000 3150 4050 3150
 Wire Wire Line
@@ -597,4 +584,15 @@ Wire Notes Line
 	6550 4750 7150 4750
 Wire Notes Line
 	6550 3350 6550 4750
+$Comp
+L my_library:USBLC6-2SC6 U??
+U 1 1 6087567F
+P 4450 3350
+F 0 "U??" H 4450 3817 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 4450 3726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4500 2900 50  0001 C CNN
+F 3 "" V 4800 3150 50  0001 C CNN
+	1    4450 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
