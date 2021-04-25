@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -590,9 +590,9 @@ Text HLabel 7250 4700 2    50   BiDi ~ 0
 USB_DN
 Text HLabel 7250 4800 2    50   BiDi ~ 0
 USB_DP
-Text HLabel 7250 3800 2    50   BiDi ~ 0
+Text HLabel 7250 3800 2    50   Output ~ 0
 USART2_TX
-Text HLabel 7250 3900 2    50   BiDi ~ 0
+Text HLabel 7250 3900 2    50   Input ~ 0
 USART2_RX
 Wire Bus Line
 	4650 3400 4900 3400

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -269,7 +269,7 @@ $EndComp
 Wire Wire Line
 	8350 2700 8350 2500
 $Comp
-L New_Library:sram_23A1024 U?
+L logic-analyzer-v1-rescue:sram_23A1024-New_Library U?
 U 1 1 6063BECA
 P 1750 2900
 F 0 "U?" H 2300 3750 50  0000 C CNN
@@ -280,7 +280,7 @@ F 3 "https://www.tme.eu/pl/details/23lc1024-i_sn/pamieci-sram-szeregowe/microchi
 	1    0    0    -1  
 $EndComp
 $Comp
-L New_Library:sram_23A1024 U?
+L logic-analyzer-v1-rescue:sram_23A1024-New_Library U?
 U 1 1 6064CBA0
 P 1750 4850
 F 0 "U?" H 2300 5700 50  0000 C CNN
