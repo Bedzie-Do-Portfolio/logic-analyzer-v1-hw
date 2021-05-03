@@ -16,377 +16,498 @@ $EndDescr
 $Comp
 L Memory_RAM:ESP-PSRAM32 U?
 U 1 1 5FDC3CB3
-P 5000 3150
+P 6000 3150
 AR Path="/5F19654C/5FDC3CB3" Ref="U?"  Part="1" 
 AR Path="/5FDBE2FD/5FDC3CB3" Ref="U?"  Part="1" 
-F 0 "U?" H 4850 3150 50  0000 R CNN
-F 1 "ESP-PSRAM32" H 4800 3700 50  0000 R CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 2550 50  0001 C CNN
-F 3 "https://www.tme.eu/Document/745fc52173836ec906dd19c8a3a18eb9/20005142C.pdf" H 4600 3650 50  0001 C CNN
-	1    5000 3150
+F 0 "U?" H 5850 3150 50  0000 R CNN
+F 1 "ESP-PSRAM32" H 5800 3700 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6000 2550 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/745fc52173836ec906dd19c8a3a18eb9/20005142C.pdf" H 5600 3650 50  0001 C CNN
+	1    6000 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5FDC3CB9
-P 4900 2450
+P 5900 2450
 AR Path="/5F19654C/5FDC3CB9" Ref="#PWR?"  Part="1" 
 AR Path="/5FDBE2FD/5FDC3CB9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4900 2300 50  0001 C CNN
-F 1 "+3V3" H 4915 2623 50  0000 C CNN
-F 2 "" H 4900 2450 50  0001 C CNN
-F 3 "" H 4900 2450 50  0001 C CNN
-	1    4900 2450
+F 0 "#PWR?" H 5900 2300 50  0001 C CNN
+F 1 "+3V3" H 5915 2623 50  0000 C CNN
+F 2 "" H 5900 2450 50  0001 C CNN
+F 3 "" H 5900 2450 50  0001 C CNN
+	1    5900 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FDC3CBF
-P 4900 3650
+P 5900 3650
 AR Path="/5F19654C/5FDC3CBF" Ref="#PWR?"  Part="1" 
 AR Path="/5FDBE2FD/5FDC3CBF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4900 3400 50  0001 C CNN
-F 1 "GND" H 4905 3477 50  0000 C CNN
-F 2 "" H 4900 3650 50  0001 C CNN
-F 3 "" H 4900 3650 50  0001 C CNN
-	1    4900 3650
+F 0 "#PWR?" H 5900 3400 50  0001 C CNN
+F 1 "GND" H 5905 3477 50  0000 C CNN
+F 2 "" H 5900 3650 50  0001 C CNN
+F 3 "" H 5900 3650 50  0001 C CNN
+	1    5900 3650
 	1    0    0    -1  
 $EndComp
-Text Label 6050 3250 0    50   ~ 0
+Text Label 7050 3250 0    50   ~ 0
 SPI_MOSI
-Text Label 6050 3350 0    50   ~ 0
+Text Label 7050 3350 0    50   ~ 0
 SPI_MISO
-Text Label 6050 2950 0    50   ~ 0
+Text Label 7050 2950 0    50   ~ 0
 SPI_SCK
-Text Label 6050 3050 0    50   ~ 0
+Text Label 7050 3050 0    50   ~ 0
 HOLD
 $Comp
 L Device:R R?
 U 1 1 5FDC3CCA
-P 5800 2650
+P 6800 2650
 AR Path="/5F08ED8D/5FDC3CCA" Ref="R?"  Part="1" 
 AR Path="/5F19654C/5FDC3CCA" Ref="R?"  Part="1" 
 AR Path="/5FDBE2FD/5FDC3CCA" Ref="R?"  Part="1" 
-F 0 "R?" V 5700 2750 50  0000 C CNN
-F 1 "10k" V 5700 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5730 2650 50  0001 C CNN
-F 3 "~" H 5800 2650 50  0001 C CNN
-	1    5800 2650
+F 0 "R?" V 6700 2750 50  0000 C CNN
+F 1 "10k" V 6700 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6730 2650 50  0001 C CNN
+F 3 "~" H 6800 2650 50  0001 C CNN
+	1    6800 2650
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FDC3CD0
-P 5600 2650
+P 6600 2650
 AR Path="/5F08ED8D/5FDC3CD0" Ref="R?"  Part="1" 
 AR Path="/5F19654C/5FDC3CD0" Ref="R?"  Part="1" 
 AR Path="/5FDBE2FD/5FDC3CD0" Ref="R?"  Part="1" 
-F 0 "R?" V 5500 2750 50  0000 C CNN
-F 1 "10k" V 5500 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5530 2650 50  0001 C CNN
-F 3 "~" H 5600 2650 50  0001 C CNN
-	1    5600 2650
+F 0 "R?" V 6500 2750 50  0000 C CNN
+F 1 "10k" V 6500 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 2650 50  0001 C CNN
+F 3 "~" H 6600 2650 50  0001 C CNN
+	1    6600 2650
 	-1   0    0    -1  
 $EndComp
-Text Label 6050 3150 0    50   ~ 0
+Text Label 7050 3150 0    50   ~ 0
 NU
 $Comp
 L Device:C C?
 U 1 1 5FDC3CE3
-P 4550 3150
+P 5550 3150
 AR Path="/5F19654C/5FDC3CE3" Ref="C?"  Part="1" 
 AR Path="/5FDBE2FD/5FDC3CE3" Ref="C?"  Part="1" 
-F 0 "C?" V 4500 3050 50  0000 C CNN
-F 1 "100n" V 4500 3300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4588 3000 50  0001 C CNN
-F 3 "~" H 4550 3150 50  0001 C CNN
-	1    4550 3150
+F 0 "C?" V 5500 3050 50  0000 C CNN
+F 1 "100n" V 5500 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5588 3000 50  0001 C CNN
+F 3 "~" H 5550 3150 50  0001 C CNN
+	1    5550 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 3650 4550 3650
+	5900 3650 5550 3650
 Wire Wire Line
-	4550 3650 4550 3300
+	5550 3650 5550 3300
 Wire Wire Line
-	4900 2450 4550 2450
-Connection ~ 4900 3650
-Text Notes 5050 3850 0    50   ~ 10
-dla estetyki skopiować libke i edytować zgodnie z DS
-Connection ~ 4900 2450
+	5900 2450 5550 2450
+Connection ~ 5900 3650
+Text Notes 5500 3950 0    50   ~ 10
+dla estetyki skopiować libke i edytować zgodnie z DS??
+Connection ~ 5900 2450
 Wire Wire Line
-	4550 2450 4550 3000
+	5550 2450 5550 3000
 Wire Wire Line
-	4900 2650 4900 2450
+	5900 2650 5900 2450
 Wire Wire Line
-	5600 2500 5600 2450
-Connection ~ 5600 2450
+	6600 2500 6600 2450
+Connection ~ 6600 2450
 Wire Wire Line
-	5600 2450 5800 2450
+	6600 2450 6800 2450
 Wire Wire Line
-	5800 2450 5800 2500
+	6800 2450 6800 2500
 Wire Wire Line
-	4900 2450 5500 2450
+	5900 2450 6500 2450
 Wire Wire Line
-	5500 3050 5500 2450
-Connection ~ 5500 2450
+	6500 3050 6500 2450
+Connection ~ 6500 2450
 Wire Wire Line
-	5500 2450 5600 2450
+	6500 2450 6600 2450
 Wire Wire Line
-	5500 3050 5400 3050
-Connection ~ 5500 3050
+	6500 3050 6400 3050
+Connection ~ 6500 3050
 Wire Wire Line
-	5400 3250 6500 3250
+	6400 3250 7500 3250
 Wire Wire Line
-	5400 3350 6500 3350
+	6400 3350 7500 3350
 Wire Wire Line
-	5400 3150 5800 3150
+	6400 3150 6800 3150
 Wire Wire Line
-	5500 3050 6500 3050
+	6500 3050 7500 3050
 Wire Wire Line
-	5400 2950 6500 2950
+	6400 2950 7500 2950
 Wire Wire Line
-	5400 2850 5600 2850
+	6400 2850 6600 2850
 Wire Wire Line
-	5800 2800 5800 3150
-Connection ~ 5800 3150
+	6800 2800 6800 3150
+Connection ~ 6800 3150
 Wire Wire Line
-	5800 3150 6500 3150
+	6800 3150 7500 3150
 Wire Wire Line
-	5600 2800 5600 2850
-Connection ~ 5600 2850
+	6600 2800 6600 2850
+Connection ~ 6600 2850
 Wire Wire Line
-	5600 2850 6500 2850
-Text Label 1050 4450 2    50   ~ 0
+	6600 2850 7500 2850
+Text Label 2050 4400 2    50   ~ 0
 SPI_MISO
-Text Label 3550 4600 0    50   ~ 0
+Text Label 4550 4500 0    50   ~ 0
 SPI_SCK
-Text Label 1050 4300 2    50   ~ 0
+Text Label 2050 4300 2    50   ~ 0
 SPI_CS_1
 $Comp
 L Device:R R?
 U 1 1 5FDDAAEC
-P 1400 4100
+P 2400 4100
 AR Path="/5F08ED8D/5FDDAAEC" Ref="R?"  Part="1" 
 AR Path="/5F19654C/5FDDAAEC" Ref="R?"  Part="1" 
 AR Path="/5FDBE2FD/5FDDAAEC" Ref="R?"  Part="1" 
-F 0 "R?" V 1300 4200 50  0000 C CNN
-F 1 "10k" V 1300 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1330 4100 50  0001 C CNN
-F 3 "~" H 1400 4100 50  0001 C CNN
-	1    1400 4100
+F 0 "R?" V 2300 4200 50  0000 C CNN
+F 1 "10k" V 2300 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2330 4100 50  0001 C CNN
+F 3 "~" H 2400 4100 50  0001 C CNN
+	1    2400 4100
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FDDAAF2
-P 1600 4150
+P 2600 4150
 AR Path="/5F08ED8D/5FDDAAF2" Ref="R?"  Part="1" 
 AR Path="/5F19654C/5FDDAAF2" Ref="R?"  Part="1" 
 AR Path="/5FDBE2FD/5FDDAAF2" Ref="R?"  Part="1" 
-F 0 "R?" V 1500 4250 50  0000 C CNN
-F 1 "10k" V 1500 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1530 4150 50  0001 C CNN
-F 3 "~" H 1600 4150 50  0001 C CNN
-	1    1600 4150
+F 0 "R?" V 2500 4250 50  0000 C CNN
+F 1 "10k" V 2500 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 4150 50  0001 C CNN
+F 3 "~" H 2600 4150 50  0001 C CNN
+	1    2600 4150
 	-1   0    0    -1  
 $EndComp
-Text Label 800  4600 2    50   ~ 0
-NU
 Wire Wire Line
-	1750 4450 650  4450
-Wire Wire Line
-	2900 4600 4000 4600
-Wire Wire Line
-	1750 4600 1400 4600
-Wire Wire Line
-	1750 4300 1600 4300
-Text HLabel 8100 3750 2    50   Input ~ 0
+	2750 4400 1650 4400
+Text HLabel 9600 3950 2    50   Input ~ 0
 SPI_MOSI
-Text HLabel 8100 3850 2    50   Output ~ 0
+Text HLabel 9600 4050 2    50   Output ~ 0
 SPI_MISO
-Text HLabel 8100 3950 2    50   Input ~ 0
+Text HLabel 9600 4150 2    50   Input ~ 0
 SPI_SCK
-Text HLabel 8100 4050 2    50   Input ~ 0
+Text HLabel 9600 4250 2    50   Input ~ 0
 SPI_CS_0
-Text HLabel 8100 4150 2    50   Input ~ 0
+Text HLabel 9600 4350 2    50   Input ~ 0
 SPI_CS_1
-Text Label 7250 3950 0    50   ~ 0
+Text Label 8750 4150 0    50   ~ 0
 SPI_SCK
-Text Label 7250 4050 0    50   ~ 0
+Text Label 8750 4250 0    50   ~ 0
 SPI_CS_0
 Wire Wire Line
-	7250 3950 8100 3950
+	8750 4150 9600 4150
 Wire Wire Line
-	7250 4050 8100 4050
-Text Label 7250 4150 0    50   ~ 0
+	8750 4250 9600 4250
+Text Label 8750 4350 0    50   ~ 0
 SPI_CS_1
 Wire Wire Line
-	7250 4150 8100 4150
+	8750 4350 9600 4350
 Wire Wire Line
-	7250 3850 8100 3850
+	8750 4050 9600 4050
 Wire Wire Line
-	7250 3750 8100 3750
-Text Label 7250 3750 0    50   ~ 0
+	8750 3950 9600 3950
+Text Label 8750 3950 0    50   ~ 0
 SPI_MOSI
-Text Label 7250 3850 0    50   ~ 0
+Text Label 8750 4050 0    50   ~ 0
 SPI_MISO
-Text Label 6050 2850 0    50   ~ 0
+Text Label 7050 2850 0    50   ~ 0
 SPI_CS_0
-Text HLabel 8150 5150 2    50   UnSpc ~ 10
+Text HLabel 9600 2850 2    50   UnSpc ~ 10
 GND
 $Comp
 L power:GND #PWR?
 U 1 1 5FDFEFBC
-P 8000 5200
+P 9350 3050
 AR Path="/5F08ED8D/5FDFEFBC" Ref="#PWR?"  Part="1" 
 AR Path="/5FDBE2FD/5FDFEFBC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8000 4950 50  0001 C CNN
-F 1 "GND" H 8005 5027 50  0000 C CNN
-F 2 "" H 8000 5200 50  0001 C CNN
-F 3 "" H 8000 5200 50  0001 C CNN
-	1    8000 5200
+F 0 "#PWR?" H 9350 2800 50  0001 C CNN
+F 1 "GND" H 9355 2877 50  0000 C CNN
+F 2 "" H 9350 3050 50  0001 C CNN
+F 3 "" H 9350 3050 50  0001 C CNN
+	1    9350 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 5200 8000 5150
+	9350 3050 9350 2850
 Wire Wire Line
-	8000 5150 8150 5150
-Text HLabel 7950 2700 0    50   UnSpc ~ 10
+	9350 2850 9600 2850
+Text HLabel 9600 2700 2    50   UnSpc ~ 10
 +3V3
-Wire Wire Line
-	7950 2700 8350 2700
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FE01A3E
-P 8350 2500
-F 0 "#PWR?" H 8350 2350 50  0001 C CNN
-F 1 "+3.3V" H 8365 2673 50  0000 C CNN
-F 2 "" H 8350 2500 50  0001 C CNN
-F 3 "" H 8350 2500 50  0001 C CNN
-	1    8350 2500
+P 9350 2500
+F 0 "#PWR?" H 9350 2350 50  0001 C CNN
+F 1 "+3.3V" H 9365 2673 50  0000 C CNN
+F 2 "" H 9350 2500 50  0001 C CNN
+F 3 "" H 9350 2500 50  0001 C CNN
+	1    9350 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 2700 8350 2500
-$Comp
-L logic-analyzer-v1-rescue:sram_23A1024-New_Library U?
-U 1 1 6064CBA0
-P 1750 4850
-F 0 "U?" H 2300 5700 50  0000 C CNN
-F 1 "sram_23A1024" H 2300 5600 50  0000 C CNN
-F 2 "" H 2300 5550 50  0001 C CNN
-F 3 "https://www.tme.eu/pl/details/23lc1024-i_sn/pamieci-sram-szeregowe/microchip-technology/" H 2300 5550 50  0001 C CNN
-	1    1750 4850
-	1    0    0    -1  
-$EndComp
+	9350 2700 9350 2500
 $Comp
 L Device:C C?
 U 1 1 6064CE71
-P 2300 5050
+P 3300 4850
 AR Path="/5F19654C/6064CE71" Ref="C?"  Part="1" 
 AR Path="/5FDBE2FD/6064CE71" Ref="C?"  Part="1" 
-F 0 "C?" V 2250 4950 50  0000 C CNN
-F 1 "100n" V 2250 5200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2338 4900 50  0001 C CNN
-F 3 "~" H 2300 5050 50  0001 C CNN
-	1    2300 5050
+F 0 "C?" V 3250 4750 50  0000 C CNN
+F 1 "100n" V 3250 5000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3338 4700 50  0001 C CNN
+F 3 "~" H 3300 4850 50  0001 C CNN
+	1    3300 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2900 4300 3050 4300
+	3900 4300 4050 4300
 Wire Wire Line
-	3050 4300 3050 4450
+	4050 4850 3450 4850
 Wire Wire Line
-	3050 5050 2450 5050
+	2750 4850 3150 4850
 Wire Wire Line
-	1750 4750 1750 5050
-Wire Wire Line
-	1750 5050 2150 5050
-Wire Wire Line
-	3050 4300 3050 3950
-Connection ~ 3050 4300
+	4050 4300 4050 3950
+Connection ~ 4050 4300
 $Comp
 L power:GND #PWR?
 U 1 1 6065064B
-P 1750 5150
+P 2750 5000
 AR Path="/5F19654C/6065064B" Ref="#PWR?"  Part="1" 
 AR Path="/5FDBE2FD/6065064B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1750 4900 50  0001 C CNN
-F 1 "GND" H 1755 4977 50  0000 C CNN
-F 2 "" H 1750 5150 50  0001 C CNN
-F 3 "" H 1750 5150 50  0001 C CNN
-	1    1750 5150
+F 0 "#PWR?" H 2750 4750 50  0001 C CNN
+F 1 "GND" H 2755 4827 50  0000 C CNN
+F 2 "" H 2750 5000 50  0001 C CNN
+F 3 "" H 2750 5000 50  0001 C CNN
+	1    2750 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60650961
-P 3050 3850
+P 4050 3850
 AR Path="/5F19654C/60650961" Ref="#PWR?"  Part="1" 
 AR Path="/5FDBE2FD/60650961" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3050 3700 50  0001 C CNN
-F 1 "+3V3" H 3065 4023 50  0000 C CNN
-F 2 "" H 3050 3850 50  0001 C CNN
-F 3 "" H 3050 3850 50  0001 C CNN
-	1    3050 3850
+F 0 "#PWR?" H 4050 3700 50  0001 C CNN
+F 1 "+3V3" H 4065 4023 50  0000 C CNN
+F 2 "" H 4050 3850 50  0001 C CNN
+F 3 "" H 4050 3850 50  0001 C CNN
+	1    4050 3850
 	1    0    0    -1  
 $EndComp
-Text Label 3550 4450 0    50   ~ 0
+Text Label 4550 4600 0    50   ~ 0
+SPI_MOSI
+Connection ~ 2600 4300
+Wire Wire Line
+	2600 4300 1650 4300
+Wire Wire Line
+	2600 4000 2600 3950
+Wire Wire Line
+	2600 3950 4050 3950
+Connection ~ 4050 3950
+Wire Wire Line
+	4050 3950 4050 3850
+Wire Wire Line
+	4050 3850 2400 3850
+Connection ~ 4050 3850
+Wire Wire Line
+	2400 3850 2400 3950
+Wire Wire Line
+	2400 4250 2400 4500
+Wire Wire Line
+	2400 4500 1650 4500
+Wire Wire Line
+	4050 4300 4050 4400
+Text Label 4550 4400 0    50   ~ 0
 HOLD
 Wire Wire Line
-	2900 4750 4000 4750
-Text Label 3550 4750 0    50   ~ 0
-SPI_MOSI
+	4050 4400 5000 4400
 Wire Wire Line
-	2900 4450 3050 4450
-Connection ~ 3050 4450
+	2750 4500 2400 4500
 Wire Wire Line
-	3050 4450 3050 5050
-Wire Wire Line
-	3050 4450 4000 4450
-Connection ~ 1600 4300
-Wire Wire Line
-	1600 4300 650  4300
-Wire Wire Line
-	1600 4000 1600 3950
-Wire Wire Line
-	1600 3950 3050 3950
-Connection ~ 3050 3950
-Wire Wire Line
-	3050 3950 3050 3850
-Wire Wire Line
-	3050 3850 1400 3850
-Connection ~ 3050 3850
-Wire Wire Line
-	1400 3850 1400 3950
-Wire Wire Line
-	1400 4250 1400 4600
-Connection ~ 1400 4600
-Wire Wire Line
-	1400 4600 650  4600
-Connection ~ 1750 5050
-Wire Wire Line
-	1750 5050 1750 5150
-$Comp
-L my_library:sram_23A1024 U??
-U 1 1 60877B38
-P 2300 1650
-F 0 "U??" H 2325 2065 50  0000 C CNN
-F 1 "sram_23A1024" H 2325 1974 50  0000 C CNN
-F 2 "" H 2300 2000 50  0001 C CNN
-F 3 "" H 2300 2000 50  0001 C CNN
-	1    2300 1650
-	1    0    0    -1  
-$EndComp
+	2750 4300 2600 4300
 $Comp
 L my_library:sram_23A1024 U?
 U 1 1 60878112
-P 2300 2400
-F 0 "U?" H 2325 2815 50  0000 C CNN
-F 1 "sram_23A1024" H 2325 2724 50  0000 C CNN
-F 2 "" H 2300 2750 50  0001 C CNN
-F 3 "" H 2300 2750 50  0001 C CNN
-	1    2300 2400
+P 3300 4450
+F 0 "U?" H 3325 4865 50  0000 C CNN
+F 1 "sram_23A1024" H 3325 4774 50  0000 C CNN
+F 2 "" H 3300 4800 50  0001 C CNN
+F 3 "" H 3300 4800 50  0001 C CNN
+	1    3300 4450
 	1    0    0    -1  
 $EndComp
+Connection ~ 4050 4400
+Wire Wire Line
+	4050 4400 4050 4850
+Wire Wire Line
+	3900 4400 4050 4400
+Wire Wire Line
+	3900 4600 5000 4600
+Wire Wire Line
+	3900 4500 5000 4500
+Connection ~ 2400 4500
+Text Label 1800 4500 2    50   ~ 0
+NU
+Connection ~ 2750 4850
+Wire Wire Line
+	2750 4850 2750 5000
+Wire Wire Line
+	2750 4600 2750 4850
+Text Label 2050 2750 2    50   ~ 0
+SPI_MISO
+Text Label 4550 2850 0    50   ~ 0
+SPI_SCK
+Text Label 2050 2650 2    50   ~ 0
+SPI_CS_1
+$Comp
+L Device:R R?
+U 1 1 60939A78
+P 2400 2450
+AR Path="/5F08ED8D/60939A78" Ref="R?"  Part="1" 
+AR Path="/5F19654C/60939A78" Ref="R?"  Part="1" 
+AR Path="/5FDBE2FD/60939A78" Ref="R?"  Part="1" 
+F 0 "R?" V 2300 2550 50  0000 C CNN
+F 1 "10k" V 2300 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2330 2450 50  0001 C CNN
+F 3 "~" H 2400 2450 50  0001 C CNN
+	1    2400 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60939A7E
+P 2600 2500
+AR Path="/5F08ED8D/60939A7E" Ref="R?"  Part="1" 
+AR Path="/5F19654C/60939A7E" Ref="R?"  Part="1" 
+AR Path="/5FDBE2FD/60939A7E" Ref="R?"  Part="1" 
+F 0 "R?" V 2500 2600 50  0000 C CNN
+F 1 "10k" V 2500 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 2500 50  0001 C CNN
+F 3 "~" H 2600 2500 50  0001 C CNN
+	1    2600 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2750 1650 2750
+$Comp
+L Device:C C?
+U 1 1 60939A85
+P 3300 3200
+AR Path="/5F19654C/60939A85" Ref="C?"  Part="1" 
+AR Path="/5FDBE2FD/60939A85" Ref="C?"  Part="1" 
+F 0 "C?" V 3250 3100 50  0000 C CNN
+F 1 "100n" V 3250 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3338 3050 50  0001 C CNN
+F 3 "~" H 3300 3200 50  0001 C CNN
+	1    3300 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2650 4050 2650
+Wire Wire Line
+	4050 3200 3450 3200
+Wire Wire Line
+	2750 3200 3150 3200
+Wire Wire Line
+	4050 2650 4050 2300
+Connection ~ 4050 2650
+$Comp
+L power:GND #PWR?
+U 1 1 60939A90
+P 2750 3350
+AR Path="/5F19654C/60939A90" Ref="#PWR?"  Part="1" 
+AR Path="/5FDBE2FD/60939A90" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2750 3100 50  0001 C CNN
+F 1 "GND" H 2755 3177 50  0000 C CNN
+F 2 "" H 2750 3350 50  0001 C CNN
+F 3 "" H 2750 3350 50  0001 C CNN
+	1    2750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60939A96
+P 4050 2200
+AR Path="/5F19654C/60939A96" Ref="#PWR?"  Part="1" 
+AR Path="/5FDBE2FD/60939A96" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 2050 50  0001 C CNN
+F 1 "+3V3" H 4065 2373 50  0000 C CNN
+F 2 "" H 4050 2200 50  0001 C CNN
+F 3 "" H 4050 2200 50  0001 C CNN
+	1    4050 2200
+	1    0    0    -1  
+$EndComp
+Text Label 4550 2950 0    50   ~ 0
+SPI_MOSI
+Connection ~ 2600 2650
+Wire Wire Line
+	2600 2650 1650 2650
+Wire Wire Line
+	2600 2350 2600 2300
+Wire Wire Line
+	2600 2300 4050 2300
+Connection ~ 4050 2300
+Wire Wire Line
+	4050 2300 4050 2200
+Wire Wire Line
+	4050 2200 2400 2200
+Connection ~ 4050 2200
+Wire Wire Line
+	2400 2200 2400 2300
+Wire Wire Line
+	2400 2600 2400 2850
+Wire Wire Line
+	2400 2850 1650 2850
+Wire Wire Line
+	4050 2650 4050 2750
+Text Label 4550 2750 0    50   ~ 0
+HOLD
+Wire Wire Line
+	4050 2750 5000 2750
+Wire Wire Line
+	2750 2850 2400 2850
+Wire Wire Line
+	2750 2650 2600 2650
+$Comp
+L my_library:sram_23A1024 U?
+U 1 1 60939AAD
+P 3300 2800
+F 0 "U?" H 3325 3215 50  0000 C CNN
+F 1 "sram_23A1024" H 3325 3124 50  0000 C CNN
+F 2 "" H 3300 3150 50  0001 C CNN
+F 3 "" H 3300 3150 50  0001 C CNN
+	1    3300 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 2750
+Wire Wire Line
+	4050 2750 4050 3200
+Wire Wire Line
+	3900 2750 4050 2750
+Wire Wire Line
+	3900 2950 5000 2950
+Wire Wire Line
+	3900 2850 5000 2850
+Connection ~ 2400 2850
+Text Label 1800 2850 2    50   ~ 0
+NU
+Connection ~ 2750 3200
+Wire Wire Line
+	2750 3200 2750 3350
+Wire Wire Line
+	2750 2950 2750 3200
+Wire Wire Line
+	9600 2700 9350 2700
 $EndSCHEMATC
